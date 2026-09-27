@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WT CLASS TASK 2</title>
+<style>
+  body {
+    background-color: #E6F7FF;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+  td {
+    text-align: center;
+  }
+  img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  p {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  button {
+    padding: 8px 16px;
+    margin: 15px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h1>River's Photography</h1>
+
+<audio id="bg-music" loop src="riversound.mp3"></audio>
+<button onclick="playMusic()">Play Music</button>
+
+<table>
+  <tr>
+    <td>
+      <img src="Amazon River.jpg" width="300" height="300">
+      <p>Amazon River</p>
+    </td>
+    <td>
+      <img src="Serene Misty River.jpg" width="300" height="300">
+      <p>Serene Misty River</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="Texas River.jpg" width="300" height="300">
+      <p>Texas River</p>
+    </td>
+    <td>
+      <img src="Top River.jpg" width="300" height="300">
+      <p>Top River</p>
+    </td>
+  </tr>
+</table>
+
+<script>
+function playMusic() {
+  var music = document.getElementById("bg-music");
+  music.play().catch(function(error) {
+    alert("Error: " + error.message);
+  });
+}
+</script>
+
+</body>
+</html>
